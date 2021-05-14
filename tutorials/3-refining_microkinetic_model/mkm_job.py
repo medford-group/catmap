@@ -1,7 +1,7 @@
 from catmap import ReactionModel
 
 mkm_file = 'CO_oxidation.mkm'
-model = ReactionModel(setup_file=mkm_file)
+model = ReactionModel(setup_file=mkm_file, create_standalone=True)
 model.output_variables += ['production_rate']#,'rate_control']
 model.run()
 

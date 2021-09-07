@@ -3,3 +3,4 @@ from .generalized_linear_scaler import *
 from .thermodynamic_scaler import *
 from .concentration_scaler import *
 from .null_scaler import *
+from .lookup_scaler import *

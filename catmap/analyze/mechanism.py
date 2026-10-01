@@ -7,6 +7,9 @@ try:
 except ImportError:
     print('Warning! graphviz not imported.')
 from itertools import chain, product
+import matplotlib as mpl
+mpl.rcParams['text.usetex'] = True
+import pylab as plt
 
 class MechanismAnalysis(MechanismPlot,ReactionModelWrapper,MapPlot):
     """
